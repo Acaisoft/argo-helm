@@ -38,6 +38,8 @@ controller:
     level: info
     globallevel: "0"
 
+  nodeSelector: {}
+
 ui:
   enabled: true
   # only show workflows where UI installed
@@ -79,6 +81,7 @@ ui:
     #   - secretName: argo-ui-tls
     #     hosts:
     #       - argo.domain.com
+  nodeSelector: {}
 
 # Influences the creation of the ConfigMap for the workflow-controller itself.
 useDefaultArtifactRepo: false
